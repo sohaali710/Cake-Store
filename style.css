@@ -1,0 +1,291 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --cafe: #daac5b;
+    --gray: gray;
+
+    --custom-black: #111213;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+nav {
+    width: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    z-index: 2;
+}
+
+nav li a {
+    color: var(--white) !important;
+
+    border-bottom: transparent 2px solid;
+    transition: 1s ease;
+}
+
+nav li a.active {
+    color: var(--cafe) !important;
+
+    border-bottom: var(--white) 2px solid;
+}
+
+nav li .nav-link:hover {
+    color: var(--cafe) !important;
+
+    border-bottom: var(--white) 2px solid;
+}
+
+.main-banner {
+    width: 100%;
+    height: 940px;
+
+    font-family: 'Roboto', sans-serif;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/slide-1.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* position: relative;
+    top: 139px; */
+}
+
+.main-banner .header-1 {
+    width: 80%;
+    height: 50%;
+
+    text-align: center;
+    color: var(--white);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    color: var(--gray);
+}
+
+.main-banner .header-1 h5 {
+    color: var(--cafe);
+}
+
+.main-banner .header-1 h2 {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.btn {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+
+    width: 170px;
+    height: 50px;
+
+    transition: .4s ease;
+}
+
+.button-border {
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+}
+
+.button-color {
+    color: var(--white);
+    background-color: var(--cafe);
+    border: none;
+}
+
+/* Popular */
+.popular {
+    width: 100%;
+    height: 680px;
+    margin-top: 30px;
+
+    color: var(--black);
+
+    position: relative;
+    top: 0;
+}
+
+.popular .popular-header h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.popular .btn {
+    width: 185px;
+    height: 55px;
+
+    transition: .8s ease;
+}
+
+.popular .btn:hover {
+    background-color: var(--cafe);
+}
+
+.popular .btn:hover span {
+    border-bottom: 1px solid var(--white);
+}
+
+.popular .swiper {
+    width: 100%;
+    height: 360px;
+
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popular .swiper:hover:active {
+    cursor: grab;
+}
+
+.popular .swiper .swiper-slide {
+    width: 270px;
+    height: 350px;
+
+    overflow: hidden;
+
+    position: relative;
+    top: 0;
+}
+
+.popular .swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+
+    transition: .4s ease;
+}
+
+.popular i {
+    font-size: 30px;
+
+    opacity: 0;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+    color: var(--white);
+}
+
+.swiper .swiper-slide:hover img {
+    transform: scale(1.1, 1.1);
+
+    filter: brightness(50%);
+}
+
+.swiper .swiper-slide:hover i {
+    opacity: 1;
+}
+
+/* footer */
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
+    padding: 100px 0;
+
+    background-color: var(--custom-black) !important;
+}
+
+footer h5 {
+    font-size: 24px;
+    color: var(--white);
+
+    margin-bottom: 30px;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+footer li {
+    padding-left: 1em;
+    text-indent: -1em;
+
+    margin-bottom: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--gray);
+
+    transition: .4s ease;
+}
+
+footer .collection img {
+    width: 80px;
+    height: 80px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+footer input {
+    width: 100%;
+    height: 60px;
+
+    padding: 0 16px;
+    margin-bottom: 20px;
+
+    outline: none;
+}
+
+footer .social i {
+    color: var(--gray);
+
+    margin-left: 10px;
+
+    transition: .5s ease;
+}
+
+footer .social i:hover,
+footer li a:hover {
+    color: var(--cafe) !important;
+}
+
+.rights {
+    height: 60px;
+    background-color: var(--custom-black);
+
+    border-top: 1px solid rgb(24, 25, 26);
+
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 1px;
+}
+
+.rights span {
+    color: var(--cafe);
+}
